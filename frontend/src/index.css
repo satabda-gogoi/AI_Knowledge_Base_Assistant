@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.25);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.45);
+  }
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  font-weight: 600;
+  color: #f8fafc;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.markdown-body h1 {
+  font-size: 1.15rem;
+}
+
+.markdown-body h2 {
+  font-size: 1.05rem;
+}
+
+.markdown-body h3 {
+  font-size: 0.98rem;
+}
+
+.markdown-body p {
+  margin-bottom: 0.65rem;
+  line-height: 1.65;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0.5rem 0 0.75rem 1.25rem;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+  line-height: 1.55;
+}
+
+.markdown-body code {
+  background: rgba(30, 41, 59, 0.9);
+  color: #a5b4fc;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.3rem;
+  font-size: 0.85em;
+}
+
+.markdown-body pre {
+  background: #0f172a;
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  border-radius: 0.6rem;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.markdown-body pre code {
+  background: transparent;
+  padding: 0;
+  color: #e2e8f0;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: rgba(30, 41, 59, 0.7);
+  color: #f1f5f9;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 0.85rem;
+  color: #cbd5e1;
+  margin: 0.65rem 0;
+}
